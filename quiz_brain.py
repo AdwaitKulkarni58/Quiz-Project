@@ -19,5 +19,5 @@ class QuizBrain:
             print(f"The correct answer is {correct_answer}")
             print(f"Your score is: {self.score} / {len(self.question_list)}")
         else:
-            print(f"The correct answer is {correct_answer}")
+            print(f"The correct answer was {correct_answer}")
             print(f"Your score is: {self.score} / {len(self.question_list)}")
