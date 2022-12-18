@@ -14,4 +14,10 @@ class QuizBrain:
         self.check_answer(answer, currentItem.answer)
         
     def check_answer(self, answer, correct_answer):
-        
+        if (answer.lower() == correct_answer.lower()):
+            self.score += 1
+            print(f"The correct answer is {correct_answer}")
+            print(f"Your score is: {self.score} / {len(self.question_list)}")
+        else:
+            print(f"The correct answer is {correct_answer}")
+            print(f"Your score is: {self.score} / {len(self.question_list)}")
